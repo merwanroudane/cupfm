@@ -1,0 +1,63 @@
+site_name: PyCupFM
+site_description: Panel Cointegration with Common Factors — Python Library
+site_author: Dr. Merwan Roudane
+site_url: https://merwanroudane.github.io/cupfm/
+repo_url: https://github.com/merwanroudane/cupfm
+repo_name: merwanroudane/cupfm
+
+theme:
+  name: material
+  palette:
+    scheme: default
+    primary: indigo
+    accent: cyan
+  font:
+    text: Inter
+    code: JetBrains Mono
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.tabs.link
+  icon:
+    repo: fontawesome/brands/github
+
+plugins:
+  - search
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.arithmatex:
+      generic: true
+  - admonition
+  - pymdownx.details
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/merwanroudane
+    - icon: fontawesome/solid/envelope
+      link: mailto:merwanroudane920@gmail.com
+
+copyright: Copyright &copy; 2026 Dr. Merwan Roudane
+
+nav:
+  - Home: index.md
+  - Getting Started: getting-started.md
+  - Theory: theory.md
+  - API Reference: api.md
+  - Examples: examples.md
+  - Changelog: changelog.md
