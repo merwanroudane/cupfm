@@ -10,7 +10,7 @@ theme:
   palette:
     scheme: default
     primary: indigo
-    accent: cyan
+    accent: teal
   font:
     text: Inter
     code: JetBrains Mono
@@ -18,10 +18,12 @@ theme:
     - navigation.tabs
     - navigation.sections
     - navigation.top
+    - navigation.instant
     - search.suggest
     - search.highlight
     - content.code.copy
     - content.tabs.link
+    - toc.follow
   icon:
     repo: fontawesome/brands/github
 
@@ -34,6 +36,8 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.arithmatex:
       generic: true
+  - pymdownx.tabbed:
+      alternate_style: true
   - admonition
   - pymdownx.details
   - attr_list
@@ -42,6 +46,9 @@ markdown_extensions:
   - toc:
       permalink: true
 
+extra_css:
+  - assets/custom.css
+
 extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
@@ -49,6 +56,8 @@ extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/merwanroudane
+    - icon: fontawesome/brands/python
+      link: https://pypi.org/project/pycupfm/
     - icon: fontawesome/solid/envelope
       link: mailto:merwanroudane920@gmail.com
 
@@ -59,5 +68,5 @@ nav:
   - Getting Started: getting-started.md
   - Theory: theory.md
   - API Reference: api.md
-  - Examples: examples.md
+  - Examples & Gallery: examples.md
   - Changelog: changelog.md
